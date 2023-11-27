@@ -1,0 +1,180 @@
+/* Global */
+@font-face{
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+	font-weight: bold;
+}
+
+body{
+	background-color: hsl(235, 18%, 26%);
+	font-family: "Roboto";
+	font-size: 16px;
+	font-weight: 400;
+	color: hsl(235, 18%, 26%);
+}
+
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.bold {
+	font-weight: 700;
+}
+
+/* Newsletter form */
+.form-container{
+	display: flex;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 30px;
+	margin: 0 auto;
+	width: fit-content;
+	height: auto;
+}
+
+#newsletter-form {
+	margin-top: 30px;
+	padding: 55px;
+	width: 360px;
+}
+
+.newsletter-thumbnail {
+	padding: 20px;
+	padding-left: 0;
+}
+
+/* exception made here */
+.label-row {
+	display: flex;
+    justify-content: space-between;
+	margin: 0 !important;
+}
+
+#newsletter-form > * {
+	margin: 20px auto;
+}
+
+.form-container h1{
+	font-weight: 700;
+	font-size: 52px;
+}
+
+#newsletter-form label, #newsletter-form .error-label {
+	font-weight: 700;
+	font-size: x-small;
+}
+
+.error-label {
+	display: none;
+	color: hsl(4, 100%, 67%);
+}
+
+#newsletter-form ul {
+    padding-left: 0;
+    line-height: 30px;
+	margin-bottom: 35px;
+}
+
+#newsletter-form li {
+	margin-top: 5px;
+    list-style: none;
+    background: url("../images/icon-list.svg") no-repeat left center;
+    padding-left: 35px; /* depends on your image size */
+}
+
+#newsletter-form input {
+	transition: 0.2s;
+	border-radius: 5px;
+    height: 50px;
+    width: 100%;
+	margin-top: 5px;
+    box-sizing: border-box;
+    padding-left: 20px;
+	padding-right: 20px;
+	border-width: 2px;
+	outline: none;
+	cursor: pointer;
+}
+
+.form-container-textbox {
+	border-style: solid;
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(235, 18%, 26%);
+	border-color: hsl(240, 4%, 78%);
+}
+
+.input-error {
+	border-style: solid;
+	border-color: hsl(4, 100%, 67%);
+	color:hsl(4, 100%, 67%);
+	background-color: hsl(4, 100%, 95%);
+}
+
+#email:invalid ~ .error-label {
+	display: block;
+}
+
+.form-container-textbox.input-error:active, .form-container-textbox.input-error:hover, .form-container-textbox.input-error:focus {
+	border-color: inherit;
+}
+
+.form-container-textbox:active, .form-container-textbox:hover, .form-container-textbox:focus {
+	border-color: hsl(235, 18%, 26%);
+}
+
+.button {
+	transition: 0.2s;
+	border-radius: 5px;
+    height: 50px;
+    width: 100%;
+	margin-top: 5px;
+    box-sizing: border-box;
+    padding-left: 20px;
+	padding-right: 20px;
+	border-width: 2px;
+	outline: none;
+	cursor: pointer;
+	color: hsl(0, 0%, 100%);
+	font-weight: 700;
+	background-color: hsl(234, 29%, 20%);
+	border: none;
+}
+
+.button:active, .button:hover, .button:focus {
+	background: linear-gradient(90deg, hsl(328, 94%, 60%) -90%, hsl(4, 100%, 67%) 100%);
+	box-shadow: 0 5px 20px hsl(4, 100%, 67%);
+}
+
+/* Notification */
+.notification {
+	padding: 50px;
+	width: 380px;
+}
+
+.form-container p {
+	margin-top: 0;
+	margin-bottom: 32px;
+}
+
+.form-container h1 {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+/* Default values */
+#newsletter-success {
+	display: none;
+}
+
+/* Attribution */
+.attribution { position: absolute; bottom: 20px; left:50%; transform: translateX(-50%); font-size: 11px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 92%); }
