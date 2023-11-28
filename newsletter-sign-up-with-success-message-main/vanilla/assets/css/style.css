@@ -1,17 +1,17 @@
 /* Global */
-@font-face{
+@font-face {
 	font-family: "Roboto";
 	src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 	font-weight: normal;
 }
 
-@font-face{
+@font-face {
 	font-family: "Roboto";
 	src: url("../fonts/Roboto-Bold.ttf") format("truetype");
 	font-weight: bold;
 }
 
-body{
+body {
 	background-color: hsl(235, 18%, 26%);
 	font-family: "Roboto";
 	font-size: 16px;
@@ -32,7 +32,7 @@ body{
 }
 
 /* Common components */
-.form-container{
+.form-container {
 	display: flex;
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 30px;
@@ -41,7 +41,7 @@ body{
 	height: auto;
 }
 
-.alert-container{
+.alert-container {
 	display: flex;
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 30px;
@@ -192,26 +192,26 @@ body{
 .attribution a { color: hsl(0, 0%, 92%); }
 
 @media only screen and (max-width: 768px) {
-	.form-container{
+	.form-container {
 		width: 100%;
 		height: 100%;
 		flex-direction: column;
 		border-radius: 0;
 	}
 
-	.form-container > *{
+	.form-container > * {
 		order: 2;
 		margin: 0 auto;
 	}
 
-	.newsletter-thumbnail{
+	.newsletter-thumbnail {
 		order: 1;
 		margin: 0;
 		padding: 0;
 		width: 100%;
 	}
 
-	#newsletter-form{
+	#newsletter-form {
 		width: 80%;
 		margin-top: 15px;
 		padding: 0;
@@ -226,28 +226,27 @@ body{
 		margin-top: 5px;
 		list-style: none;
 		background: url("../images/icon-list.svg") no-repeat left top;
-		padding-left: 35px; /* depends on your image size */
+		padding-left: 35px;
 	}
 
-	.alert-container :nth-child(1)
-	{
+	.alert-container :nth-child(1) {
 		flex: 0 0 80%;
 	}
 
-	.alert-container{
+	.alert-container {
 		padding: 0;
 		width: 100%;
 		height: 100%;
 		border-radius: 0;
 	}
 
-	.alert-container > button{
+	.alert-container > button {
 		position: absolute;
 		bottom: 8%;
 		left: 50%;
 		transform: translateX(-50%);
 	}
-	.alert{
+	.alert {
 		margin: 0 auto;
 		margin-top: 50%;
 		padding: 0;

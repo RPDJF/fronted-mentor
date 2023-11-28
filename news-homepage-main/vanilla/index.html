@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+	<title>Frontend Mentor | News homepage</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution {
+			font-size: 11px;
+		}
+
+		.attribution a {
+			color: hsl(228, 45%, 44%);
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+	<div id="container">
+
+		<header>
+			<img id="header-logo" alt="website logo" src="./assets/images/logo.svg">
+			<nav>
+				<ul id="nav-list">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">New</a></li>
+					<li><a href="#">Popular</a></li>
+					<li><a href="#">Trending</a></li>
+					<li><a href="#">Categories</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="featured-news">
+			<div id="headline-container">
+				<img class="headline-image image_full" alt="some random geometric layouts" src="./assets/images/image-web-3-desktop.jpg">
+				<img class="headline-image image_mobile" alt="some random geometric layouts" src="./assets/images/image-web-3-mobile.jpg">
+				<div id="headline-article">
+					<h1 id="headline-title">The Bright Future of Web 3.0?</h1>
+					<div id="headline-read">
+						<p id="headline-content">We dive into the next evolution of the web that claims to put the power of the platforms back into the
+							hands of the people.
+							But is it really fulfilling its promise?</p>
+						<a class="button" href="#">Read more</a>
+					</div>
+				</div>
+			</div>
+
+			<aside id="news-container">
+				<h1 id="news-title">New</h1>
+				<div id="feeds-container">
+					<article class="news-feed">
+						<a href="#" class="feed-title">Hydrogen VS Electric Cars</a>
+						<p class="feed-content">Will hydrogen-fueled cars ever catch up to EVs?</p>
+					</article>
+					<hr>
+					<article class="news-feed">
+						<a href="#" class="feed-title">The Downsides of AI Artistry</a>
+						<p class="feed-content">What are the possible adverse effects of on-demand AI image generation?</p>
+					</article>
+					<hr>
+					<article class="news-feed">
+						<a href="#" class="feed-title">Is VC Funding Drying Up?</a>
+						<p class="feed-content">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+					</article>
+				</div>
+			</aside>
+		</section>
+
+		<section id="trend-container">
+
+			<article class="trend-feed">
+				<img class="trend-thumbnail" alt="retro computer" src="./assets/images/image-retro-pcs.jpg">
+				<div class="trend-article">
+					<h1 class="trend-rank">01</h1>
+					<a href="#" class="trend-title">Reviving Retro PCs</a>
+					<p class="trend-content">What happens when old PCs are given modern upgrades?</p>
+				</div>
+			</article>
+
+			<article class="trend-feed">
+				<img class="trend-thumbnail" alt="laptop keyboard" src="./assets/images/image-top-laptops.jpg">
+				<div class="trend-article">
+					<h1 class="trend-rank">02</h1>
+					<a href="#" class="trend-title">Top 10 Laptops of 2022</a>
+					<p class="trend-content">Our best picks for various needs and budgets.</p>
+				</div>
+			</article>
+
+			<article class="trend-feed">
+				<img class="trend-thumbnail" alt="hand throwing a gameped" src="./assets/images/image-gaming-growth.jpg">
+				<div class="trend-article">
+					<h1 class="trend-rank">03</h1>
+					<a href="#" class="trend-title">The Growth of Gaming</a>
+					<p class="trend-content">How the pandemic has sparked fresh opportunities.</p>
+				</div>
+			</article>
+
+		</section>
+
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</div>
+</body>
+
+</html>
