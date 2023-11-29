@@ -22,6 +22,7 @@
 	</style>
 
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<script src="./assets/js/index.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -29,21 +30,24 @@
 
 		<header>
 			<img id="header-logo" alt="website logo" src="./assets/images/logo.svg">
-			<nav>
-				<ul id="nav-list">
+			<img class="image-mobile nav-menu-button" onclick="openSidebar()" src="./assets/images/icon-menu.svg" alt="icon menu">
+			<div onclick="closeSidebar()" class="nav-menu-shadow nav-menu-hidden"></div>
+			<nav class="nav-menu-hidden">
+				<menu id="nav-list">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">New</a></li>
 					<li><a href="#">Popular</a></li>
 					<li><a href="#">Trending</a></li>
 					<li><a href="#">Categories</a></li>
-				</ul>
+				</menu>
 			</nav>
+			<img onclick="closeSidebar()" class="image-mobile nav-menu-close nav-menu-hidden" src="./assets/images/icon-menu-close.svg" alt="close menu icon">
 		</header>
 
 		<section id="featured-news">
 			<div id="headline-container">
-				<img class="headline-image image_full" alt="some random geometric layouts" src="./assets/images/image-web-3-desktop.jpg">
-				<img class="headline-image image_mobile" alt="some random geometric layouts" src="./assets/images/image-web-3-mobile.jpg">
+				<img class="headline-image image-full" alt="some random geometric layouts" src="./assets/images/image-web-3-desktop.jpg">
+				<img class="headline-image image-mobile" alt="some random geometric layouts" src="./assets/images/image-web-3-mobile.jpg">
 				<div id="headline-article">
 					<h1 id="headline-title">The Bright Future of Web 3.0?</h1>
 					<div id="headline-read">
